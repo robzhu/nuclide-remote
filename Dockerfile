@@ -33,6 +33,10 @@ RUN apt-get install -y nodejs
 # Install Nuclide Remote Server
 RUN npm install -g nuclide
 
+# Create project directory
+RUN mkdir /root/src
+WORKDIR /root/src
+
 EXPOSE 9090
 EXPOSE 2222
 
