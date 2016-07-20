@@ -31,7 +31,7 @@ RUN apt-get update -qq
 RUN apt-get install -y nodejs
 
 # Install Nuclide Remote Server
-RUN npm install -g nuclide
+RUN npm install -g nuclide@0.155.0
 
 # Create project directory
 RUN mkdir /root/src
