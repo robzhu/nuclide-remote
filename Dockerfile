@@ -18,7 +18,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 RUN apt-get -y install make autoconf git libpython-dev
 RUN git clone https://github.com/facebook/watchman.git \
 	&& cd watchman \
-	&& git checkout v4.5.0 \
+	&& git checkout v4.6.0 \
 	&& ./autogen.sh \
 	&& ./configure \
 	&& make && make install
